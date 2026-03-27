@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GymBreeze — Premium gym essentials for those who demand more. Power. Precision. Performance." />
+  <title>GymBreeze | Elevate Your Grind</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 (grid/utilities only) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+  <!-- AOS Animate On Scroll -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ NAVIGATION ═══ -->
+  <nav class="gb-nav" id="gbNav" aria-label="Main navigation">
+    <div class="gb-nav__inner">
+      <a href="#hero" class="gb-nav__logo" aria-label="GymBreeze home">
+        <span class="gb-nav__logo-icon" aria-hidden="true"></span>
+        <span class="gb-nav__logo-text">GymBreeze</span>
+      </a>
+      <button class="gb-nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="gb-nav__links" id="navMenu" role="list">
+        <li><a href="#shop" class="gb-nav__link">Shop</a></li>
+        <li><a href="#about" class="gb-nav__link">About</a></li>
+        <li><a href="#testimonials" class="gb-nav__link">Reviews</a></li>
+        <li><a href="#contact" class="gb-nav__link">Contact</a></li>
+        <li><a href="#shop" class="gb-nav__cta">Shop Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════ HERO ═══ -->
+  <section class="gb-hero" id="hero" aria-label="Hero">
+    <!-- Background noise overlay -->
+    <div class="gb-hero__noise" aria-hidden="true"></div>
+    <!-- Grid overlay -->
+    <div class="gb-hero__grid" aria-hidden="true"></div>
+    <!-- Parallax background layer -->
+    <div class="gb-hero__bg-layer" id="heroBgLayer" aria-hidden="true"></div>
+
+    <div class="container gb-hero__container">
+      <div class="gb-hero__content">
+        <p class="gb-hero__eyebrow" data-aos="fade-up" data-aos-delay="0">Premium Gym Lifestyle</p>
+        <h1 class="gb-hero__headline" data-aos="fade-up" data-aos-delay="100">
+          Power.<br />Precision.<br />Performance.
+        </h1>
+        <p class="gb-hero__sub" data-aos="fade-up" data-aos-delay="200">
+          Premium gym essentials for those who demand more.
+        </p>
+        <div class="gb-hero__actions" data-aos="fade-up" data-aos-delay="300">
+          <a href="#shop" class="gb-btn gb-btn--cta">Shop Now</a>
+          <a href="#about" class="gb-btn gb-btn--ghost">Our Story</a>
+        </div>
+      </div>
+
+      <!-- Floating hero visual -->
+      <div class="gb-hero__visual" id="heroVisual" aria-hidden="true">
+        <div class="gb-hero__visual-glow"></div>
+        <div class="gb-hero__product-display">
+          <!-- SVG Dumbbell -->
+          <svg class="gb-hero__dumbbell" viewBox="0 0 420 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Left weight plate group -->
+            <rect x="10" y="60" width="28" height="80" rx="3" fill="#2b2b2b" stroke="#00f0ff" stroke-width="2"/>
+            <rect x="38" y="45" width="36" height="110" rx="4" fill="#1a1a1a" stroke="#00f0ff" stroke-width="2.5"/>
+            <!-- Bar -->
+            <rect x="74" y="90" width="272" height="20" rx="2" fill="#333" stroke="#00f0ff" stroke-width="1.5"/>
+            <!-- Center knurl marks -->
+            <line x1="160" y1="90" x2="160" y2="110" stroke="#00f0ff" stroke-width="0.8" opacity="0.5"/>
+            <line x1="170" y1="90" x2="170" y2="110" stroke="#00f0ff" stroke-width="0.8" opacity="0.5"/>
+            <line x1="180" y1="90" x2="180" y2="110" stroke="#00f0ff" stroke-width="0.8" opacity="0.5"/>
+            <line x1="190" y1="90" x2="190" y2="110" stroke="#00f0ff" stroke-width="0.8" opacity="0.5"/>
+            <line x1="200" y1="90" x2="200" y2="110" stroke="#00f0ff" stroke-width="0.8" opacity="0.5"/>
+            <line x1="210" y1="90" x2="210" y2="110" stroke="#00f0ff" stroke-width="0.8" opacity="0.5"/>
+            <line x1="220" y1="90" x2="220" y2="110" stroke="#00f0ff" stroke-width="0.8" opacity="0.5"/>
+            <line x1="230" y1="90" x2="230" y2="110" stroke="#00f0ff" stroke-width="0.8" opacity="0.5"/>
+            <line x1="240" y1="90" x2="240" y2="110" stroke="#00f0ff" stroke-width="0.8" opacity="0.5"/>
+            <line x1="250" y1="90" x2="250" y2="110" stroke="#00f0ff" stroke-width="0.8" opacity="0.5"/>
+            <line x1="260" y1="90" x2="260" y2="110" stroke="#00f0ff" stroke-width="0.8" opacity="0.5"/>
+            <!-- Right weight plate group -->
+            <rect x="346" y="45" width="36" height="110" rx="4" fill="#1a1a1a" stroke="#00f0ff" stroke-width="2.5"/>
+            <rect x="382" y="60" width="28" height="80" rx="3" fill="#2b2b2b" stroke="#00f0ff" stroke-width="2"/>
+            <!-- Neon glow dots -->
+            <circle cx="48" cy="100" r="4" fill="#00f0ff" opacity="0.8"/>
+            <circle cx="372" cy="100" r="4" fill="#ff006e" opacity="0.8"/>
+          </svg>
+
+          <!-- Floating particles -->
+          <div class="gb-hero__particle gb-hero__particle--1" aria-hidden="true"></div>
+          <div class="gb-hero__particle gb-hero__particle--2" aria-hidden="true"></div>
+          <div class="gb-hero__particle gb-hero__particle--3" aria-hidden="true"></div>
+          <div class="gb-hero__particle gb-hero__particle--4" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="gb-hero__scroll" aria-hidden="true">
+      <span class="gb-hero__scroll-text">Scroll to Explore</span>
+      <div class="gb-hero__scroll-arrow">
+        <svg viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="22" height="34" rx="11" stroke="#00f0ff" stroke-width="1.5"/>
+          <circle class="gb-scroll-dot" cx="12" cy="10" r="3" fill="#00f0ff"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ SHOP ═══ -->
+  <section class="gb-shop" id="shop" aria-label="Shop">
+    <div class="gb-shop__noise" aria-hidden="true"></div>
+    <div class="container">
+
+      <!-- Section header -->
+      <div class="gb-section-header" data-aos="fade-up">
+        <p class="gb-section-header__eyebrow">Premium Selection</p>
+        <h2 class="gb-section-header__title">
+          Our Collection
+          <span class="gb-section-header__underline" aria-hidden="true"></span>
+        </h2>
+        <p class="gb-section-header__sub">Every product engineered for peak performance</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="gb-shop__filters" role="tablist" aria-label="Product categories">
+        <button class="gb-filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="gb-filter" data-filter="supplements" role="tab" aria-selected="false">Supplements</button>
+        <button class="gb-filter" data-filter="equipment" role="tab" aria-selected="false">Equipment</button>
+        <button class="gb-filter" data-filter="apparel" role="tab" aria-selected="false">Apparel</button>
+        <button class="gb-filter" data-filter="accessories" role="tab" aria-selected="false">Accessories</button>
+      </div>
+
+      <!-- Product grid -->
+      <div class="row gb-product-grid" id="productGrid">
+
+        <!-- ── SUPPLEMENTS ── -->
+        <div class="col-12 col-md-6 col-lg-4 gb-product-col" data-category="supplements"
+             data-aos="fade-up" data-aos-delay="0">
+          <article class="gb-card" tabindex="0" aria-label="Apex Whey Protein">
+            <div class="gb-card__media">
+              <div class="gb-card__img-wrap">
+                <!-- SVG Protein Bottle -->
+                <svg class="gb-card__product-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M70 40 L60 80 L50 220 Q50 230 60 230 L140 230 Q150 230 150 220 L140 80 L130 40 Z" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.5"/>
+                  <rect x="75" y="20" width="50" height="22" rx="3" fill="#2b2b2b" stroke="#00f0ff" stroke-width="1.5"/>
+                  <rect x="80" y="10" width="40" height="12" rx="2" fill="#333" stroke="#00f0ff" stroke-width="1"/>
+                  <rect x="58" y="80" width="84" height="40" rx="0" fill="#00f0ff" opacity="0.12"/>
+                  <text x="100" y="97" text-anchor="middle" fill="#00f0ff" font-family="Space Grotesk, sans-serif" font-size="10" font-weight="700">APEX</text>
+                  <text x="100" y="111" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="7">WHEY PROTEIN</text>
+                  <rect x="65" y="130" width="70" height="2" fill="#00f0ff" opacity="0.3"/>
+                  <text x="100" y="155" text-anchor="middle" fill="#f4f4f4" font-family="Inter, sans-serif" font-size="8">5kg · 100 Servings</text>
+                  <text x="100" y="168" text-anchor="middle" fill="#ff006e" font-family="Space Grotesk, sans-serif" font-size="7" font-weight="600">CHOCOLATE FUSION</text>
+                  <circle cx="100" cy="195" r="18" fill="none" stroke="#00f0ff" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+                  <text x="100" y="199" text-anchor="middle" fill="#00f0ff" font-family="Space Grotesk, sans-serif" font-size="8" font-weight="700">GB</text>
+                </svg>
+              </div>
+              <div class="gb-card__overlay" aria-hidden="true"></div>
+              <button class="gb-card__quick-view" aria-label="Quick view Apex Whey Protein">Quick View</button>
+            </div>
+            <div class="gb-card__body">
+              <span class="gb-card__category">Supplements</span>
+              <h3 class="gb-card__name">Apex Whey Protein</h3>
+              <p class="gb-card__desc">5kg ultra-pure isolate. 100 servings of uncompromising quality.</p>
+              <div class="gb-card__footer">
+                <span class="gb-card__price">$89<sup>.99</sup></span>
+                <button class="gb-btn gb-btn--cart" aria-label="Add Apex Whey Protein to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 gb-product-col" data-category="supplements"
+             data-aos="fade-up" data-aos-delay="100">
+          <article class="gb-card" tabindex="0" aria-label="Storm Pre-Workout">
+            <div class="gb-card__media">
+              <div class="gb-card__img-wrap">
+                <svg class="gb-card__product-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M80 35 L72 75 L65 220 Q65 230 75 230 L125 230 Q135 230 135 220 L128 75 L120 35 Z" fill="#1a1a1a" stroke="#ff006e" stroke-width="1.5"/>
+                  <rect x="83" y="18" width="34" height="18" rx="3" fill="#2b2b2b" stroke="#ff006e" stroke-width="1.5"/>
+                  <rect x="87" y="9" width="26" height="11" rx="2" fill="#333" stroke="#ff006e" stroke-width="1"/>
+                  <rect x="68" y="75" width="64" height="38" rx="0" fill="#ff006e" opacity="0.15"/>
+                  <text x="100" y="91" text-anchor="middle" fill="#ff006e" font-family="Space Grotesk, sans-serif" font-size="11" font-weight="700">STORM</text>
+                  <text x="100" y="105" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="6.5">PRE-WORKOUT EXTREME</text>
+                  <rect x="72" y="122" width="56" height="1.5" fill="#ff006e" opacity="0.4"/>
+                  <text x="100" y="145" text-anchor="middle" fill="#f4f4f4" font-family="Inter, sans-serif" font-size="7.5">400mg Caffeine · 40 servings</text>
+                  <text x="100" y="158" text-anchor="middle" fill="#00f0ff" font-family="Space Grotesk, sans-serif" font-size="7" font-weight="600">ELECTRIC BERRY</text>
+                  <polygon points="100,180 106,194 122,196 111,207 114,223 100,215 86,223 89,207 78,196 94,194" fill="none" stroke="#ff006e" stroke-width="1" opacity="0.6"/>
+                </svg>
+              </div>
+              <div class="gb-card__overlay" aria-hidden="true"></div>
+              <button class="gb-card__quick-view" aria-label="Quick view Storm Pre-Workout">Quick View</button>
+            </div>
+            <div class="gb-card__body">
+              <span class="gb-card__category" style="color: #ff006e;">Supplements</span>
+              <h3 class="gb-card__name">Storm Pre-Workout</h3>
+              <p class="gb-card__desc">400mg caffeine matrix. Feel the surge before you even step in.</p>
+              <div class="gb-card__footer">
+                <span class="gb-card__price">$54<sup>.99</sup></span>
+                <button class="gb-btn gb-btn--cart" aria-label="Add Storm Pre-Workout to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ── EQUIPMENT ── -->
+        <div class="col-12 col-md-6 col-lg-4 gb-product-col" data-category="equipment"
+             data-aos="fade-up" data-aos-delay="200">
+          <article class="gb-card" tabindex="0" aria-label="Titan Hex Dumbbells">
+            <div class="gb-card__media">
+              <div class="gb-card__img-wrap">
+                <svg class="gb-card__product-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <!-- Dumbbell pair front view -->
+                  <rect x="20" y="90" width="22" height="60" rx="2" fill="#2b2b2b" stroke="#00f0ff" stroke-width="1.5"/>
+                  <rect x="42" y="80" width="28" height="80" rx="3" fill="#1a1a1a" stroke="#00f0ff" stroke-width="2"/>
+                  <rect x="70" y="108" width="60" height="24" rx="1.5" fill="#2b2b2b" stroke="#00f0ff" stroke-width="1.5"/>
+                  <rect x="130" y="80" width="28" height="80" rx="3" fill="#1a1a1a" stroke="#00f0ff" stroke-width="2"/>
+                  <rect x="158" y="90" width="22" height="60" rx="2" fill="#2b2b2b" stroke="#00f0ff" stroke-width="1.5"/>
+                  <!-- Weight markings -->
+                  <text x="56" y="122" text-anchor="middle" fill="#00f0ff" font-family="Space Grotesk, sans-serif" font-size="9" font-weight="700">25</text>
+                  <text x="56" y="133" text-anchor="middle" fill="#00f0ff" font-family="Space Grotesk, sans-serif" font-size="5">KG</text>
+                  <text x="144" y="122" text-anchor="middle" fill="#00f0ff" font-family="Space Grotesk, sans-serif" font-size="9" font-weight="700">25</text>
+                  <text x="144" y="133" text-anchor="middle" fill="#00f0ff" font-family="Space Grotesk, sans-serif" font-size="5">KG</text>
+                  <!-- Grip lines -->
+                  <line x1="76" y1="108" x2="76" y2="132" stroke="#00f0ff" stroke-width="0.7" opacity="0.4"/>
+                  <line x1="82" y1="108" x2="82" y2="132" stroke="#00f0ff" stroke-width="0.7" opacity="0.4"/>
+                  <line x1="88" y1="108" x2="88" y2="132" stroke="#00f0ff" stroke-width="0.7" opacity="0.4"/>
+                  <line x1="94" y1="108" x2="94" y2="132" stroke="#00f0ff" stroke-width="0.7" opacity="0.4"/>
+                  <line x1="100" y1="108" x2="100" y2="132" stroke="#00f0ff" stroke-width="0.7" opacity="0.4"/>
+                  <line x1="106" y1="108" x2="106" y2="132" stroke="#00f0ff" stroke-width="0.7" opacity="0.4"/>
+                  <line x1="112" y1="108" x2="112" y2="132" stroke="#00f0ff" stroke-width="0.7" opacity="0.4"/>
+                  <line x1="118" y1="108" x2="118" y2="132" stroke="#00f0ff" stroke-width="0.7" opacity="0.4"/>
+                  <line x1="124" y1="108" x2="124" y2="132" stroke="#00f0ff" stroke-width="0.7" opacity="0.4"/>
+                  <!-- Label -->
+                  <text x="100" y="185" text-anchor="middle" fill="#f4f4f4" font-family="Space Grotesk, sans-serif" font-size="10" font-weight="700">TITAN HEX</text>
+                  <text x="100" y="198" text-anchor="middle" fill="#00f0ff" font-family="Inter, sans-serif" font-size="7">PRECISION CAST IRON</text>
+                </svg>
+              </div>
+              <div class="gb-card__overlay" aria-hidden="true"></div>
+              <button class="gb-card__quick-view" aria-label="Quick view Titan Hex Dumbbells">Quick View</button>
+            </div>
+            <div class="gb-card__body">
+              <span class="gb-card__category">Equipment</span>
+              <h3 class="gb-card__name">Titan Hex Dumbbells</h3>
+              <p class="gb-card__desc">Precision cast iron, rubberized hex. Built to last a lifetime of lifts.</p>
+              <div class="gb-card__footer">
+                <span class="gb-card__price">$129<sup>.99</sup></span>
+                <button class="gb-btn gb-btn--cart" aria-label="Add Titan Hex Dumbbells to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 gb-product-col" data-category="equipment"
+             data-aos="fade-up" data-aos-delay="0">
+          <article class="gb-card" tabindex="0" aria-label="Forge Kettlebell">
+            <div class="gb-card__media">
+              <div class="gb-card__img-wrap">
+                <svg class="gb-card__product-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <!-- Kettlebell body -->
+                  <circle cx="100" cy="155" r="65" fill="#1a1a1a" stroke="#ff006e" stroke-width="2"/>
+                  <!-- Inner ring -->
+                  <circle cx="100" cy="155" r="52" fill="none" stroke="#ff006e" stroke-width="0.8" opacity="0.3"/>
+                  <!-- Handle -->
+                  <path d="M72 95 Q72 55 100 55 Q128 55 128 95" fill="none" stroke="#ff006e" stroke-width="12" stroke-linecap="round"/>
+                  <path d="M72 95 Q72 55 100 55 Q128 55 128 95" fill="none" stroke="#1a1a1a" stroke-width="8" stroke-linecap="round"/>
+                  <path d="M72 95 Q72 55 100 55 Q128 55 128 95" fill="none" stroke="#ff006e" stroke-width="2" stroke-linecap="round"/>
+                  <!-- Weight text -->
+                  <text x="100" y="150" text-anchor="middle" fill="#ff006e" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="700">20</text>
+                  <text x="100" y="168" text-anchor="middle" fill="#f4f4f4" font-family="Inter, sans-serif" font-size="9">KG</text>
+                  <!-- Brand mark -->
+                  <text x="100" y="185" text-anchor="middle" fill="#ff006e" font-family="Space Grotesk, sans-serif" font-size="8" font-weight="600" opacity="0.7">GYMBREEZE</text>
+                  <!-- Grip marks on handle -->
+                  <line x1="82" y1="72" x2="84" y2="84" stroke="#ff006e" stroke-width="0.8" opacity="0.5"/>
+                  <line x1="90" y1="60" x2="90" y2="72" stroke="#ff006e" stroke-width="0.8" opacity="0.5"/>
+                  <line x1="98" y1="56" x2="98" y2="68" stroke="#ff006e" stroke-width="0.8" opacity="0.5"/>
+                  <line x1="106" y1="56" x2="106" y2="68" stroke="#ff006e" stroke-width="0.8" opacity="0.5"/>
+                  <line x1="114" y1="60" x2="114" y2="72" stroke="#ff006e" stroke-width="0.8" opacity="0.5"/>
+                  <line x1="118" y1="72" x2="116" y2="84" stroke="#ff006e" stroke-width="0.8" opacity="0.5"/>
+                </svg>
+              </div>
+              <div class="gb-card__overlay" aria-hidden="true"></div>
+              <button class="gb-card__quick-view" aria-label="Quick view Forge Kettlebell">Quick View</button>
+            </div>
+            <div class="gb-card__body">
+              <span class="gb-card__category" style="color: #ff006e;">Equipment</span>
+              <h3 class="gb-card__name">Forge Kettlebell 20kg</h3>
+              <p class="gb-card__desc">Competition-grade cast iron. Smooth horn, flat base, perfect balance.</p>
+              <div class="gb-card__footer">
+                <span class="gb-card__price">$74<sup>.99</sup></span>
+                <button class="gb-btn gb-btn--cart" aria-label="Add Forge Kettlebell to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ── APPAREL ── -->
+        <div class="col-12 col-md-6 col-lg-4 gb-product-col" data-category="apparel"
+             data-aos="fade-up" data-aos-delay="100">
+          <article class="gb-card" tabindex="0" aria-label="Breeze Performance Tee">
+            <div class="gb-card__media">
+              <div class="gb-card__img-wrap">
+                <svg class="gb-card__product-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <!-- T-shirt silhouette -->
+                  <path d="M60 50 L20 80 L38 100 L55 85 L55 200 L145 200 L145 85 L162 100 L180 80 L140 50 L125 65 Q100 75 75 65 Z" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.5"/>
+                  <!-- Collar -->
+                  <path d="M80 50 Q100 60 120 50" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/>
+                  <!-- Logo on chest -->
+                  <text x="100" y="128" text-anchor="middle" fill="#00f0ff" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700">GB</text>
+                  <rect x="85" y="133" width="30" height="1.5" fill="#00f0ff" opacity="0.5"/>
+                  <text x="100" y="148" text-anchor="middle" fill="#f4f4f4" font-family="Inter, sans-serif" font-size="6.5">GYMBREEZE</text>
+                  <!-- Seam lines -->
+                  <line x1="55" y1="90" x2="55" y2="200" stroke="#00f0ff" stroke-width="0.5" opacity="0.2"/>
+                  <line x1="145" y1="90" x2="145" y2="200" stroke="#00f0ff" stroke-width="0.5" opacity="0.2"/>
+                  <!-- Sleeve neon accent -->
+                  <line x1="20" y1="80" x2="38" y2="100" stroke="#00f0ff" stroke-width="1" opacity="0.6"/>
+                  <line x1="162" y1="100" x2="180" y2="80" stroke="#00f0ff" stroke-width="1" opacity="0.6"/>
+                </svg>
+              </div>
+              <div class="gb-card__overlay" aria-hidden="true"></div>
+              <button class="gb-card__quick-view" aria-label="Quick view Breeze Performance Tee">Quick View</button>
+            </div>
+            <div class="gb-card__body">
+              <span class="gb-card__category">Apparel</span>
+              <h3 class="gb-card__name">Breeze Performance Tee</h3>
+              <p class="gb-card__desc">UltraDry™ moisture-wicking fabric. Built for maximum range of motion.</p>
+              <div class="gb-card__footer">
+                <span class="gb-card__price">$44<sup>.99</sup></span>
+                <button class="gb-btn gb-btn--cart" aria-label="Add Breeze Performance Tee to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 gb-product-col" data-category="apparel"
+             data-aos="fade-up" data-aos-delay="200">
+          <article class="gb-card" tabindex="0" aria-label="Volt Compression Shorts">
+            <div class="gb-card__media">
+              <div class="gb-card__img-wrap">
+                <svg class="gb-card__product-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <!-- Shorts silhouette -->
+                  <path d="M50 40 L50 150 Q50 165 65 170 L95 175 L100 200 L105 175 L135 170 Q150 165 150 150 L150 40 Z" fill="#1a1a1a" stroke="#39ff14" stroke-width="1.5"/>
+                  <!-- Waistband -->
+                  <rect x="50" y="40" width="100" height="20" rx="2" fill="#2b2b2b" stroke="#39ff14" stroke-width="1.5"/>
+                  <!-- Center seam -->
+                  <line x1="100" y1="60" x2="100" y2="200" stroke="#39ff14" stroke-width="0.8" stroke-dasharray="4 3" opacity="0.5"/>
+                  <!-- Side stripe left -->
+                  <rect x="50" y="60" width="8" height="100" fill="#39ff14" opacity="0.25"/>
+                  <!-- Side stripe right -->
+                  <rect x="142" y="60" width="8" height="100" fill="#39ff14" opacity="0.25"/>
+                  <!-- Logo -->
+                  <text x="100" y="105" text-anchor="middle" fill="#39ff14" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="700">GB</text>
+                  <text x="100" y="120" text-anchor="middle" fill="#f4f4f4" font-family="Inter, sans-serif" font-size="6">VOLT SERIES</text>
+                  <!-- Waistband text -->
+                  <text x="100" y="55" text-anchor="middle" fill="#39ff14" font-family="Space Grotesk, sans-serif" font-size="7" font-weight="600">GYMBREEZE</text>
+                </svg>
+              </div>
+              <div class="gb-card__overlay" aria-hidden="true"></div>
+              <button class="gb-card__quick-view" aria-label="Quick view Volt Compression Shorts">Quick View</button>
+            </div>
+            <div class="gb-card__body">
+              <span class="gb-card__category" style="color: #39ff14;">Apparel</span>
+              <h3 class="gb-card__name">Volt Compression Shorts</h3>
+              <p class="gb-card__desc">4-way stretch, neon side panels. Dominate every session in style.</p>
+              <div class="gb-card__footer">
+                <span class="gb-card__price">$39<sup>.99</sup></span>
+                <button class="gb-btn gb-btn--cart" aria-label="Add Volt Compression Shorts to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ── ACCESSORIES ── -->
+        <div class="col-12 col-md-6 col-lg-4 gb-product-col" data-category="accessories"
+             data-aos="fade-up" data-aos-delay="0">
+          <article class="gb-card" tabindex="0" aria-label="Iron Grip Lifting Belt">
+            <div class="gb-card__media">
+              <div class="gb-card__img-wrap">
+                <svg class="gb-card__product-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <!-- Belt body -->
+                  <rect x="20" y="85" width="160" height="70" rx="4" fill="#1a1a1a" stroke="#ff006e" stroke-width="2"/>
+                  <!-- Inner padding lines -->
+                  <rect x="25" y="90" width="150" height="60" rx="2" fill="none" stroke="#ff006e" stroke-width="0.8" opacity="0.3"/>
+                  <!-- Buckle left -->
+                  <rect x="20" y="90" width="25" height="60" rx="3" fill="#2b2b2b" stroke="#ff006e" stroke-width="1.5"/>
+                  <rect x="27" y="112" width="11" height="16" rx="2" fill="none" stroke="#ff006e" stroke-width="1.5"/>
+                  <line x1="32" y1="108" x2="32" y2="132" stroke="#ff006e" stroke-width="1.5" stroke-linecap="round"/>
+                  <!-- Belt texture stitching -->
+                  <rect x="55" y="92" width="110" height="56" rx="1" fill="none" stroke="#ff006e" stroke-width="0.5" stroke-dasharray="3 2" opacity="0.3"/>
+                  <!-- Brand text on belt -->
+                  <text x="115" y="120" text-anchor="middle" fill="#ff006e" font-family="Space Grotesk, sans-serif" font-size="12" font-weight="700">IRON GRIP</text>
+                  <text x="115" y="134" text-anchor="middle" fill="#f4f4f4" font-family="Inter, sans-serif" font-size="7">GYMBREEZE · 10mm LEATHER</text>
+                  <!-- Support text -->
+                  <text x="100" y="195" text-anchor="middle" fill="#f4f4f4" font-family="Inter, sans-serif" font-size="7.5">Maximum lumbar support</text>
+                  <text x="100" y="208" text-anchor="middle" fill="#ff006e" font-family="Space Grotesk, sans-serif" font-size="7" font-weight="600">POWERLIFTING APPROVED</text>
+                </svg>
+              </div>
+              <div class="gb-card__overlay" aria-hidden="true"></div>
+              <button class="gb-card__quick-view" aria-label="Quick view Iron Grip Lifting Belt">Quick View</button>
+            </div>
+            <div class="gb-card__body">
+              <span class="gb-card__category" style="color: #ff006e;">Accessories</span>
+              <h3 class="gb-card__name">Iron Grip Lifting Belt</h3>
+              <p class="gb-card__desc">10mm genuine leather. Competition-spec buckle. Max lumbar support.</p>
+              <div class="gb-card__footer">
+                <span class="gb-card__price">$79<sup>.99</sup></span>
+                <button class="gb-btn gb-btn--cart" aria-label="Add Iron Grip Lifting Belt to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 gb-product-col" data-category="accessories"
+             data-aos="fade-up" data-aos-delay="100">
+          <article class="gb-card" tabindex="0" aria-label="Pro Lifting Gloves">
+            <div class="gb-card__media">
+              <div class="gb-card__img-wrap">
+                <svg class="gb-card__product-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <!-- Glove shape (right hand) -->
+                  <!-- Fingers -->
+                  <rect x="70" y="35" width="16" height="45" rx="8" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.5"/>
+                  <rect x="90" y="28" width="16" height="52" rx="8" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.5"/>
+                  <rect x="110" y="30" width="16" height="50" rx="8" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.5"/>
+                  <rect x="130" y="38" width="15" height="42" rx="7" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.5"/>
+                  <!-- Thumb -->
+                  <path d="M55 80 Q45 70 48 55 Q52 42 65 45 Q72 50 70 65" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.5"/>
+                  <!-- Palm -->
+                  <path d="M55 80 L55 175 Q55 188 68 190 L145 190 Q158 188 158 175 L158 80 Z" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.5"/>
+                  <!-- Wrist strap -->
+                  <rect x="52" y="175" width="110" height="22" rx="11" fill="#2b2b2b" stroke="#00f0ff" stroke-width="1.5"/>
+                  <text x="107" y="190" text-anchor="middle" fill="#00f0ff" font-family="Space Grotesk, sans-serif" font-size="7" font-weight="700">GYMBREEZE</text>
+                  <!-- Palm padding dots -->
+                  <circle cx="85" cy="130" r="12" fill="#2b2b2b" stroke="#00f0ff" stroke-width="1"/>
+                  <circle cx="115" cy="130" r="12" fill="#2b2b2b" stroke="#00f0ff" stroke-width="1"/>
+                  <circle cx="100" cy="155" r="15" fill="#2b2b2b" stroke="#00f0ff" stroke-width="1"/>
+                  <!-- GB logo -->
+                  <text x="100" y="160" text-anchor="middle" fill="#00f0ff" font-family="Space Grotesk, sans-serif" font-size="8" font-weight="700">GB</text>
+                </svg>
+              </div>
+              <div class="gb-card__overlay" aria-hidden="true"></div>
+              <button class="gb-card__quick-view" aria-label="Quick view Pro Lifting Gloves">Quick View</button>
+            </div>
+            <div class="gb-card__body">
+              <span class="gb-card__category">Accessories</span>
+              <h3 class="gb-card__name">Pro Lifting Gloves</h3>
+              <p class="gb-card__desc">Micro-fiber palm pads with integrated wrist wrap. Zero-slip grip.</p>
+              <div class="gb-card__footer">
+                <span class="gb-card__price">$34<sup>.99</sup></span>
+                <button class="gb-btn gb-btn--cart" aria-label="Add Pro Lifting Gloves to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 gb-product-col" data-category="accessories"
+             data-aos="fade-up" data-aos-delay="200">
+          <article class="gb-card" tabindex="0" aria-label="Elite Gym Duffel Bag">
+            <div class="gb-card__media">
+              <div class="gb-card__img-wrap">
+                <svg class="gb-card__product-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <!-- Bag body -->
+                  <path d="M25 90 Q25 70 45 70 L155 70 Q175 70 175 90 L175 190 Q175 210 155 210 L45 210 Q25 210 25 190 Z" fill="#1a1a1a" stroke="#00f0ff" stroke-width="2"/>
+                  <!-- Top handle -->
+                  <path d="M80 55 Q80 38 100 38 Q120 38 120 55" fill="none" stroke="#00f0ff" stroke-width="4" stroke-linecap="round"/>
+                  <path d="M80 55 Q80 48 100 48 Q120 48 120 55" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+                  <!-- Shoulder strap anchors -->
+                  <rect x="22" y="100" width="8" height="16" rx="4" fill="#2b2b2b" stroke="#00f0ff" stroke-width="1"/>
+                  <rect x="170" y="100" width="8" height="16" rx="4" fill="#2b2b2b" stroke="#00f0ff" stroke-width="1"/>
+                  <!-- Zipper line -->
+                  <path d="M30 70 Q100 60 170 70" fill="none" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="5 3"/>
+                  <!-- Zipper pull -->
+                  <circle cx="100" cy="65" r="5" fill="#2b2b2b" stroke="#00f0ff" stroke-width="1.5"/>
+                  <!-- Front pocket -->
+                  <rect x="50" y="120" width="100" height="60" rx="3" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.5"/>
+                  <!-- Brand on pocket -->
+                  <text x="100" y="148" text-anchor="middle" fill="#00f0ff" font-family="Space Grotesk, sans-serif" font-size="13" font-weight="700">GB</text>
+                  <text x="100" y="162" text-anchor="middle" fill="#f4f4f4" font-family="Inter, sans-serif" font-size="6">ELITE SERIES</text>
+                  <!-- Piping accent -->
+                  <path d="M25 90 L25 190 Q25 210 45 210" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.5"/>
+                  <path d="M175 90 L175 190 Q175 210 155 210" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.5"/>
+                </svg>
+              </div>
+              <div class="gb-card__overlay" aria-hidden="true"></div>
+              <button class="gb-card__quick-view" aria-label="Quick view Elite Gym Duffel Bag">Quick View</button>
+            </div>
+            <div class="gb-card__body">
+              <span class="gb-card__category">Accessories</span>
+              <h3 class="gb-card__name">Elite Gym Duffel Bag</h3>
+              <p class="gb-card__desc">45L premium nylon. Shoe compartment, wet pocket, laptop sleeve.</p>
+              <div class="gb-card__footer">
+                <span class="gb-card__price">$119<sup>.99</sup></span>
+                <button class="gb-btn gb-btn--cart" aria-label="Add Elite Gym Duffel Bag to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div><!-- /row -->
+
+      <!-- View all CTA -->
+      <div class="gb-shop__cta-wrap" data-aos="fade-up">
+        <a href="#" class="gb-btn gb-btn--outline-neon">View Full Catalogue</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ ABOUT ═══ -->
+  <section class="gb-about" id="about" aria-label="About GymBreeze">
+    <div class="gb-about__grid-overlay" aria-hidden="true"></div>
+    <div class="container-fluid px-0">
+      <div class="row g-0 gb-about__row">
+
+        <!-- Text column -->
+        <div class="col-12 col-lg-6 gb-about__text-col" data-aos="fade-right" data-aos-duration="900">
+          <div class="gb-about__text-inner">
+            <p class="gb-section-header__eyebrow">Our Philosophy</p>
+            <h2 class="gb-about__heading">
+              The GymBreeze<br />
+              <em class="gb-about__heading-em">Standard</em>
+            </h2>
+            <div class="gb-about__divider" aria-hidden="true"></div>
+            <p class="gb-about__body">
+              We don't just sell gym products—we fuel ambition. Every item in our collection is engineered
+              for those who refuse to settle. Premium quality, bold design, uncompromising performance.
+            </p>
+            <p class="gb-about__body">
+              GymBreeze was born from a simple belief: elite-level equipment shouldn't be reserved for
+              professional athletes. Whether you're chasing a personal record or building your first
+              home gym, you deserve gear that matches your drive.
+            </p>
+            <p class="gb-about__body">
+              From lab-tested supplements to competition-grade equipment—every product carries our
+              guarantee: if it doesn't elevate your performance, it doesn't carry the GymBreeze name.
+            </p>
+            <div class="gb-about__stats">
+              <div class="gb-about__stat">
+                <span class="gb-about__stat-num">50K+</span>
+                <span class="gb-about__stat-label">Athletes Equipped</span>
+              </div>
+              <div class="gb-about__stat">
+                <span class="gb-about__stat-num">200+</span>
+                <span class="gb-about__stat-label">Products</span>
+              </div>
+              <div class="gb-about__stat">
+                <span class="gb-about__stat-num">4.9★</span>
+                <span class="gb-about__stat-label">Average Rating</span>
+              </div>
+            </div>
+            <a href="#shop" class="gb-btn gb-btn--cta gb-about__cta">Explore Products</a>
+          </div>
+        </div>
+
+        <!-- Image column -->
+        <div class="col-12 col-lg-6 gb-about__img-col" data-aos="fade-left" data-aos-duration="900">
+          <div class="gb-about__img-wrap" id="aboutImgWrap">
+            <!-- Abstract gym visual using SVG -->
+            <div class="gb-about__img-overlay" aria-hidden="true"></div>
+            <svg class="gb-about__img-svg" viewBox="0 0 600 700" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Athlete training visualization">
+              <!-- Dark background -->
+              <rect width="600" height="700" fill="#0d0d0d"/>
+              <!-- Grid lines -->
+              <g opacity="0.07" stroke="#00f0ff" stroke-width="0.5">
+                <line x1="0" y1="50" x2="600" y2="50"/>
+                <line x1="0" y1="100" x2="600" y2="100"/>
+                <line x1="0" y1="150" x2="600" y2="150"/>
+                <line x1="0" y1="200" x2="600" y2="200"/>
+                <line x1="0" y1="250" x2="600" y2="250"/>
+                <line x1="0" y1="300" x2="600" y2="300"/>
+                <line x1="0" y1="350" x2="600" y2="350"/>
+                <line x1="0" y1="400" x2="600" y2="400"/>
+                <line x1="0" y1="450" x2="600" y2="450"/>
+                <line x1="0" y1="500" x2="600" y2="500"/>
+                <line x1="0" y1="550" x2="600" y2="550"/>
+                <line x1="0" y1="600" x2="600" y2="600"/>
+                <line x1="0" y1="650" x2="600" y2="650"/>
+                <line x1="50" y1="0" x2="50" y2="700"/>
+                <line x1="100" y1="0" x2="100" y2="700"/>
+                <line x1="150" y1="0" x2="150" y2="700"/>
+                <line x1="200" y1="0" x2="200" y2="700"/>
+                <line x1="250" y1="0" x2="250" y2="700"/>
+                <line x1="300" y1="0" x2="300" y2="700"/>
+                <line x1="350" y1="0" x2="350" y2="700"/>
+                <line x1="400" y1="0" x2="400" y2="700"/>
+                <line x1="450" y1="0" x2="450" y2="700"/>
+                <line x1="500" y1="0" x2="500" y2="700"/>
+                <line x1="550" y1="0" x2="550" y2="700"/>
+              </g>
+              <!-- Athlete silhouette (deadlift pose) -->
+              <!-- Head -->
+              <circle cx="300" cy="100" r="38" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.5"/>
+              <!-- Face detail -->
+              <circle cx="288" cy="96" r="4" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.5"/>
+              <circle cx="312" cy="96" r="4" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.5"/>
+              <path d="M290 112 Q300 118 310 112" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.5"/>
+              <!-- Neck -->
+              <rect x="288" y="136" width="24" height="30" rx="4" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.2"/>
+              <!-- Torso -->
+              <path d="M220 165 L240 330 L360 330 L380 165 Q340 155 300 155 Q260 155 220 165 Z" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.5"/>
+              <!-- Shoulders -->
+              <ellipse cx="210" cy="180" rx="30" ry="20" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.5"/>
+              <ellipse cx="390" cy="180" rx="30" ry="20" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.5"/>
+              <!-- Left arm (extended holding bar) -->
+              <path d="M185 185 L120 290 L105 285 L168 178" fill="#1a1a1a" stroke="#00f0ff" stroke-width="2"/>
+              <!-- Right arm (extended holding bar) -->
+              <path d="M415 185 L480 290 L495 285 L432 178" fill="#1a1a1a" stroke="#00f0ff" stroke-width="2"/>
+              <!-- Bar across shoulders -->
+              <rect x="95" y="282" width="410" height="10" rx="5" fill="#2b2b2b" stroke="#00f0ff" stroke-width="1.5"/>
+              <!-- Weight plates on bar -->
+              <rect x="60" y="260" width="38" height="54" rx="4" fill="#1a1a1a" stroke="#ff006e" stroke-width="2"/>
+              <rect x="38" y="272" width="24" height="30" rx="3" fill="#2b2b2b" stroke="#ff006e" stroke-width="1.5"/>
+              <rect x="502" y="260" width="38" height="54" rx="4" fill="#1a1a1a" stroke="#ff006e" stroke-width="2"/>
+              <rect x="538" y="272" width="24" height="30" rx="3" fill="#2b2b2b" stroke="#ff006e" stroke-width="1.5"/>
+              <!-- Torso muscle details -->
+              <line x1="300" y1="170" x2="300" y2="330" stroke="#00f0ff" stroke-width="0.8" opacity="0.3"/>
+              <path d="M260 200 Q300 210 340 200" fill="none" stroke="#00f0ff" stroke-width="0.8" opacity="0.3"/>
+              <path d="M250 230 Q300 245 350 230" fill="none" stroke="#00f0ff" stroke-width="0.8" opacity="0.3"/>
+              <path d="M245 265 Q300 280 355 265" fill="none" stroke="#00f0ff" stroke-width="0.8" opacity="0.3"/>
+              <!-- Legs -->
+              <path d="M240 330 L220 500 L270 500 L300 390 L330 500 L380 500 L360 330 Z" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.5"/>
+              <!-- Shoes -->
+              <path d="M220 500 L210 530 L280 530 L270 500" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.5"/>
+              <path d="M330 500 L320 530 L390 530 L380 500" fill="#1a1a1a" stroke="#00f0ff" stroke-width="1.5"/>
+              <!-- Neon accent lines (energy lines) -->
+              <line x1="0" y1="400" x2="150" y2="300" stroke="#00f0ff" stroke-width="1" opacity="0.3"/>
+              <line x1="600" y1="420" x2="450" y2="310" stroke="#ff006e" stroke-width="1" opacity="0.3"/>
+              <!-- GB watermark -->
+              <text x="300" y="640" text-anchor="middle" fill="#00f0ff" font-family="Space Grotesk, sans-serif" font-size="60" font-weight="700" opacity="0.06">GYMBREEZE</text>
+            </svg>
+            <!-- Neon glow line separator -->
+            <div class="gb-about__glow-line" aria-hidden="true"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ TESTIMONIALS ═══ -->
+  <section class="gb-testimonials" id="testimonials" aria-label="Customer testimonials">
+    <div class="gb-shop__noise" aria-hidden="true"></div>
+    <div class="container">
+
+      <div class="gb-section-header" data-aos="fade-up">
+        <p class="gb-section-header__eyebrow">Social Proof</p>
+        <h2 class="gb-section-header__title">
+          Trusted by the Best
+          <span class="gb-section-header__underline" aria-hidden="true"></span>
+        </h2>
+        <p class="gb-section-header__sub">Real athletes. Real results.</p>
+      </div>
+
+      <!-- Testimonials carousel container -->
+      <div class="gb-testimonials__track-wrap" aria-label="Testimonials carousel">
+        <button class="gb-testimonials__nav gb-testimonials__nav--prev" id="prevBtn" aria-label="Previous testimonial">&#8592;</button>
+        <div class="gb-testimonials__track" id="testimonialsTrack" role="list">
+
+          <div class="gb-tcard" data-aos="fade-up" data-aos-delay="0" role="listitem">
+            <div class="gb-tcard__stars" aria-label="5 stars">★★★★★</div>
+            <blockquote class="gb-tcard__quote">
+              "The Apex Whey is hands-down the best protein I've ever used. Mixability is perfect, taste is incredible,
+              and the gains speak for themselves. GymBreeze doesn't mess around."
+            </blockquote>
+            <div class="gb-tcard__author">
+              <div class="gb-tcard__avatar" aria-hidden="true">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" fill="#1a1a1a" stroke="#39ff14" stroke-width="2"/>
+                  <circle cx="30" cy="22" r="10" fill="#2b2b2b" stroke="#39ff14" stroke-width="1"/>
+                  <path d="M8 55 Q8 38 30 38 Q52 38 52 55" fill="#2b2b2b" stroke="#39ff14" stroke-width="1"/>
+                </svg>
+              </div>
+              <div class="gb-tcard__info">
+                <span class="gb-tcard__name">MARCUS CHEN</span>
+                <span class="gb-tcard__role">Competitive Bodybuilder</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gb-tcard" data-aos="fade-up" data-aos-delay="100" role="listitem">
+            <div class="gb-tcard__stars" aria-label="5 stars">★★★★★</div>
+            <blockquote class="gb-tcard__quote">
+              "Storm Pre-Workout is the real deal. No crash, just raw energy from warm-up to final set.
+              My PRs have gone through the roof since I switched. This is elite-tier."
+            </blockquote>
+            <div class="gb-tcard__author">
+              <div class="gb-tcard__avatar" aria-hidden="true">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" fill="#1a1a1a" stroke="#ff006e" stroke-width="2"/>
+                  <circle cx="30" cy="22" r="10" fill="#2b2b2b" stroke="#ff006e" stroke-width="1"/>
+                  <path d="M8 55 Q8 38 30 38 Q52 38 52 55" fill="#2b2b2b" stroke="#ff006e" stroke-width="1"/>
+                </svg>
+              </div>
+              <div class="gb-tcard__info">
+                <span class="gb-tcard__name">SARAH MITCHELL</span>
+                <span class="gb-tcard__role">CrossFit Level 2 Trainer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gb-tcard" data-aos="fade-up" data-aos-delay="200" role="listitem">
+            <div class="gb-tcard__stars" aria-label="5 stars">★★★★★</div>
+            <blockquote class="gb-tcard__quote">
+              "The Titan Hex Dumbbells are a work of art. Perfect knurling, impeccable balance—they feel
+              like professional equipment. My clients noticed the difference immediately."
+            </blockquote>
+            <div class="gb-tcard__author">
+              <div class="gb-tcard__avatar" aria-hidden="true">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" fill="#1a1a1a" stroke="#00f0ff" stroke-width="2"/>
+                  <circle cx="30" cy="22" r="10" fill="#2b2b2b" stroke="#00f0ff" stroke-width="1"/>
+                  <path d="M8 55 Q8 38 30 38 Q52 38 52 55" fill="#2b2b2b" stroke="#00f0ff" stroke-width="1"/>
+                </svg>
+              </div>
+              <div class="gb-tcard__info">
+                <span class="gb-tcard__name">JAMES OKAFOR</span>
+                <span class="gb-tcard__role">Personal Trainer · 10yrs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gb-tcard" data-aos="fade-up" data-aos-delay="300" role="listitem">
+            <div class="gb-tcard__stars" aria-label="5 stars">★★★★★</div>
+            <blockquote class="gb-tcard__quote">
+              "Finally—gym apparel that actually looks as good as it performs. The Breeze Tee is so
+              comfortable during heavy sessions. The quality is insane for the price point."
+            </blockquote>
+            <div class="gb-tcard__author">
+              <div class="gb-tcard__avatar" aria-hidden="true">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" fill="#1a1a1a" stroke="#39ff14" stroke-width="2"/>
+                  <circle cx="30" cy="22" r="10" fill="#2b2b2b" stroke="#39ff14" stroke-width="1"/>
+                  <path d="M8 55 Q8 38 30 38 Q52 38 52 55" fill="#2b2b2b" stroke="#39ff14" stroke-width="1"/>
+                </svg>
+              </div>
+              <div class="gb-tcard__info">
+                <span class="gb-tcard__name">PRIYA SHARMA</span>
+                <span class="gb-tcard__role">Marathon Runner & HIIT Athlete</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gb-tcard" data-aos="fade-up" data-aos-delay="400" role="listitem">
+            <div class="gb-tcard__stars" aria-label="5 stars">★★★★★</div>
+            <blockquote class="gb-tcard__quote">
+              "The Iron Grip Belt is unlike anything else on the market. Solid construction, perfect fit,
+              and it broke in within a week. Deadlifted 240kg feeling completely locked in."
+            </blockquote>
+            <div class="gb-tcard__author">
+              <div class="gb-tcard__avatar" aria-hidden="true">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" fill="#1a1a1a" stroke="#ff006e" stroke-width="2"/>
+                  <circle cx="30" cy="22" r="10" fill="#2b2b2b" stroke="#ff006e" stroke-width="1"/>
+                  <path d="M8 55 Q8 38 30 38 Q52 38 52 55" fill="#2b2b2b" stroke="#ff006e" stroke-width="1"/>
+                </svg>
+              </div>
+              <div class="gb-tcard__info">
+                <span class="gb-tcard__name">LIAM ROBERTSON</span>
+                <span class="gb-tcard__role">Powerlifter · IPF Qualifier</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /track -->
+        <button class="gb-testimonials__nav gb-testimonials__nav--next" id="nextBtn" aria-label="Next testimonial">&#8594;</button>
+      </div><!-- /track-wrap -->
+
+      <!-- Dots indicator -->
+      <div class="gb-testimonials__dots" id="carouselDots" aria-label="Testimonials navigation" role="tablist"></div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ FOOTER ═══ -->
+  <footer class="gb-footer" id="contact" aria-label="Footer">
+    <div class="gb-footer__top-border" aria-hidden="true"></div>
+    <div class="container">
+      <div class="row gb-footer__main">
+
+        <!-- Brand col -->
+        <div class="col-12 col-md-4 gb-footer__brand-col">
+          <div class="gb-footer__logo">
+            <span class="gb-nav__logo-icon gb-footer__logo-icon" aria-hidden="true"></span>
+            <span>GymBreeze</span>
+          </div>
+          <p class="gb-footer__tagline">Power. Precision. Performance.<br />Elevate your grind.</p>
+          <div class="gb-footer__socials" aria-label="Social media links">
+            <a href="#" class="gb-social" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="5"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="#" class="gb-social" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.93a8.19 8.19 0 0 0 4.79 1.52V7.01a4.85 4.85 0 0 1-1.03-.32z"/>
+              </svg>
+            </a>
+            <a href="#" class="gb-social" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="#" class="gb-social" aria-label="X / Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links col -->
+        <div class="col-6 col-md-2 gb-footer__links-col">
+          <h3 class="gb-footer__col-title">Shop</h3>
+          <ul class="gb-footer__links" role="list">
+            <li><a href="#shop" class="gb-footer__link">Supplements</a></li>
+            <li><a href="#shop" class="gb-footer__link">Equipment</a></li>
+            <li><a href="#shop" class="gb-footer__link">Apparel</a></li>
+            <li><a href="#shop" class="gb-footer__link">Accessories</a></li>
+            <li><a href="#shop" class="gb-footer__link">New Arrivals</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 gb-footer__links-col">
+          <h3 class="gb-footer__col-title">Company</h3>
+          <ul class="gb-footer__links" role="list">
+            <li><a href="#about" class="gb-footer__link">About Us</a></li>
+            <li><a href="#" class="gb-footer__link">Blog</a></li>
+            <li><a href="#" class="gb-footer__link">Careers</a></li>
+            <li><a href="#" class="gb-footer__link">Press</a></li>
+            <li><a href="#contact" class="gb-footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter col -->
+        <div class="col-12 col-md-4 gb-footer__newsletter-col">
+          <h3 class="gb-footer__col-title">Stay in the Loop</h3>
+          <p class="gb-footer__newsletter-sub">Get exclusive drops, training tips, and member-only deals.</p>
+          <form class="gb-newsletter" action="#" method="post" aria-label="Newsletter signup">
+            <div class="gb-newsletter__input-group">
+              <label for="newsletterEmail" class="visually-hidden">Email address</label>
+              <input
+                type="email"
+                id="newsletterEmail"
+                name="email"
+                class="gb-newsletter__input"
+                placeholder="your@email.com"
+                required
+                autocomplete="email"
+              />
+              <button type="submit" class="gb-btn gb-btn--newsletter" aria-label="Subscribe to newsletter">
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div><!-- /row -->
+
+      <!-- Footer bottom bar -->
+      <div class="gb-footer__bottom">
+        <p class="gb-footer__copyright">
+          &copy; 2025 GymBreeze. All rights reserved. Engineered for excellence.
+        </p>
+        <div class="gb-footer__legal">
+          <a href="#" class="gb-footer__legal-link">Privacy Policy</a>
+          <a href="#" class="gb-footer__legal-link">Terms of Service</a>
+          <a href="#" class="gb-footer__legal-link">Shipping Policy</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ═════════════════ CART TOAST NOTIFICATION ═════════════════════ -->
+  <div class="gb-toast" id="cartToast" role="alert" aria-live="polite" aria-atomic="true">
+    <span class="gb-toast__icon" aria-hidden="true">✓</span>
+    <span class="gb-toast__msg" id="toastMsg">Added to cart!</span>
+  </div>
+
+  <!-- ═════════════════ SCRIPTS ═════════════════════ -->
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Bootstrap JS (utilities) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
