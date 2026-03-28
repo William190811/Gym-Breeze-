@@ -446,8 +446,7 @@
       }
     });
   });
-
-  /* ═══════════════════════════════════════════════════════════
+/* ═══════════════════════════════════════════════════════════
      7. HERO ENTRANCE ANIMATION (on load)
      ═══════════════════════════════════════════════════════════ */
   window.addEventListener('load', function () {
@@ -456,40 +455,34 @@
 
     heroTimeline
       .fromTo(
-        '.gb-hero__eyebrow',
-        { opacity: 0, y: 20 },
-        { opacity: 1, y: 0, duration: 0.6 },
+        '.hero__headline, .gb-hero__headline',
+        { opacity: 0, y: 40 },
+        { opacity: 1, y: 0, duration: 0.8 },
         0
       )
       .fromTo(
-        '.gb-hero__headline',
-        { opacity: 0, y: 40 },
-        { opacity: 1, y: 0, duration: 0.8 },
-        0.15
-      )
-      .fromTo(
-        '.gb-hero__sub',
+        '.hero__subheadline, .gb-hero__sub',
         { opacity: 0, y: 28 },
         { opacity: 1, y: 0, duration: 0.7 },
-        0.4
-      )
-      .fromTo(
-        '.gb-hero__actions',
-        { opacity: 0, y: 20 },
-        { opacity: 1, y: 0, duration: 0.6 },
-        0.6
-      )
-      .fromTo(
-        '.gb-hero__visual',
-        { opacity: 0, x: 40 },
-        { opacity: 1, x: 0, duration: 0.9 },
         0.3
       )
       .fromTo(
-        '.gb-hero__scroll',
+        '.hero__cta, .gb-hero__actions',
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.6 },
+        0.5
+      )
+      .fromTo(
+        '.hero__product, .gb-hero__visual',
+        { opacity: 0, x: 40 },
+        { opacity: 1, x: 0, duration: 0.9 },
+        0.2
+      )
+      .fromTo(
+        '.hero__scroll-indicator, .gb-hero__scroll',
         { opacity: 0 },
         { opacity: 1, duration: 0.5 },
-        1.0
+        0.8
       );
   });
 
